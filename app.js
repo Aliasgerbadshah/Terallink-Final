@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // API INTEGRATION
-            // Calling our local PHP proxy to securely handle the request without CORS issues.
-            const response = await fetch('proxy.php', {
+            // Calling our Vercel Serverless Function / Local Proxy
+            const response = await fetch('/api/proxy', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
