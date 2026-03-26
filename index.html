@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraBox Video Streamer</title>
+    <meta name="description" content="Play your TeraBox videos seamlessly online.">
+    <!-- Modern Typography: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background gradient -->
+    <div class="background-effect"></div>
+    
+    <div class="container">
+        <header>
+            <h1>TeraStream <span class="badge">Pro</span></h1>
+            <p>Paste your TeraBox link below to start streaming immediately.</p>
+        </header>
+
+        <!-- Link Input Area -->
+        <section class="input-section glass-panel">
+            <form id="tera-form">
+                <div class="input-group">
+                    <input type="url" id="tera-link" placeholder="https://terabox.com/s/..." required>
+                    <button type="submit" id="play-btn">
+                        <span>Play Video</span>
+                        <div class="loader" id="btn-loader"></div>
+                    </button>
+                </div>
+                <div id="status-message" class="hidden"></div>
+            </form>
+        </section>
+
+        <!-- Video Player Area -->
+        <section class="player-section glass-panel hidden" id="player-container">
+            <div class="video-wrapper">
+                <video id="tera-video" controls controlsList="nodownload">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 id="video-title">Video Title</h3>
+                <button id="close-player-btn" class="secondary-btn">Close Player</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="app.js"></script>
+</body>
+</html>
