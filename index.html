@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraStream Pro - Ultimate TeraBox Video Player</title>
+    <meta name="description" content="Stream TeraBox videos instantly in high quality. The most reliable and fastest TeraBox online player and downloader.">
+    <!-- Modern Typography: Outfit & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Premium Background Effects -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="bg-glow-3"></div>
+    <div class="background-grid"></div>
+    
+    <div class="main-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i data-lucide="play-circle" class="logo-icon"></i>
+                    <span>TeraStream <span class="badge">Pro</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How-To</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div id="landing-content">
+                <!-- Hero Section -->
+                <section class="hero-section">
+                    <div class="hero-content">
+                        <h1 class="reveal">Experience Video <span class="gradient-text">Without Limits</span></h1>
+                        <p class="hero-subtitle reveal">Paste your TeraBox link below. No waiting. No ads. Just pure streaming performance.</p>
+                    </div>
+
+                    <!-- Link Input Area -->
+                    <div class="input-section glass-panel reveal">
+                        <form id="tera-form">
+                            <div class="input-group">
+                                <i data-lucide="link" class="input-icon"></i>
+                                <input type="url" id="tera-link" placeholder="Paste TeraBox link here (e.g., https://terabox.com/s/...)" required>
+                                <button type="submit" id="play-btn">
+                                    <span>Stream Now</span>
+                                    <i data-lucide="arrow-right" class="btn-icon"></i>
+                                    <div class="loader" id="btn-loader"></div>
+                                </button>
+                            </div>
+                            <div id="status-message" class="hidden"></div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- How It Works Section -->
+                <section id="how-it-works" class="section">
+                    <div class="section-header reveal">
+                        <h2>Master the <span class="gradient-text">Simple Flow</span></h2>
+                        <p>Three quick steps to entertainment immortality.</p>
+                    </div>
+                    <div class="steps-grid">
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">01</div>
+                            <i data-lucide="copy" class="step-icon"></i>
+                            <h3>Copy Link</h3>
+                            <p>Grab the shareable link from your TeraBox app or website.</p>
+                        </div>
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">02</div>
+                            <i data-lucide="clipboard-paste" class="step-icon"></i>
+                            <h3>Paste Here</h3>
+                            <p>Drop it into our smart link processor above and hit stream.</p>
+                        </div>
+                        <div class="step-card glass-panel reveal">
+                            <div class="step-num">03</div>
+                            <i data-lucide="zap" class="step-icon"></i>
+                            <h3>Instant Play</h3>
+                            <p>Relax as we handle the decryption and start the show.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us / Features -->
+                <section id="features" class="section features-section">
+                    <div class="section-header reveal">
+                        <h2>Engineered for <span class="gradient-text">Perfection</span></h2>
+                        <p>Why TeraStream Pro is the world's most trusted companion.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card reveal">
+                            <div class="icon-box"><i data-lucide="bolt"></i></div>
+                            <h3>Ultra-Fast</h3>
+                            <p>Proprietary logic ensures 3x faster processing than standard proxies.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="icon-box"><i data-lucide="smartphone"></i></div>
+                            <h3>Every Device</h3>
+                            <p>Optimized for mobile, tablet, and desktop viewing experiences.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="icon-box"><i data-lucide="eye-off"></i></div>
+                            <h3>No Popups</h3>
+                            <p>We hate annoying ads as much as you do. Pure, clean interface.</p>
+                        </div>
+                        <div class="feature-card reveal">
+                            <div class="icon-box"><i data-lucide="lock"></i></div>
+                            <h3>Total Privacy</h3>
+                            <p>Your links are never stored. We process, you stream, data disappears.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Advanced Technology -->
+                <section id="about" class="section stats-section reveal">
+                    <div class="stats-glass glass-panel">
+                        <div class="stats-content">
+                            <h2>Our Visionary <span class="gradient-text">Approach</span></h2>
+                            <p>TeraStream was born from a simple frustration: simple links should mean simple viewing. We've built a custom engine that handles the heavy lifting, giving you back your time.</p>
+                            <ul class="stats-list">
+                                <li><i data-lucide="check-circle-2"></i> 99.9% Link Accuracy</li>
+                                <li><i data-lucide="check-circle-2"></i> Multi-Server Network</li>
+                                <li><i data-lucide="check-circle-2"></i> Adaptive Bitrate Quality</li>
+                            </ul>
+                        </div>
+                        <div class="stats-visual">
+                            <div class="stat-item">
+                                <span class="stat-number">3x</span>
+                                <span class="stat-label">Faster Sync</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Hidden Ads</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Video Player Area (Centered overlay when active) -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>&copy; 2024 TeraStream Pro. Built for the community.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
